@@ -1,0 +1,40 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>Editar producto</h3>
+        </div>
+        <div class="card-body">
+            <form action="/productos/editar-producto/{{productoEdit._id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="form-group">
+                    <input type="text" name="Nombre" class="form-control" placeholder="Nombre" 
+                    value = {{productoEdit.Nombre}}>
+                </div>
+                <p></p>
+                <div class="form-group">
+                    <input type="text" name="Categoria" class="form-control" placeholder="Categoria" 
+                    value = {{productoEdit.Categoria}}>
+                </div>
+                <p></p>
+                <div class="form-group">
+                    <input type="text" name="Proveedor" class="form-control" placeholder="Proveedor" 
+                    value = {{productoEdit.Proveedor}}>
+                </div>
+                <p></p>
+                <div class="form-group">
+                    <input type="text" name="Precio" class="form-control" placeholder="Precio" 
+                    value = {{productoEdit.Precio}}>
+                </div>
+                <p></p>
+                <div class = "form-group">
+                    <input type="number" name="Existencia" id="" class="form-control" placeholder="Existencia" 
+                    value={{productoEdit.Existencia}}>
+                </div>
+                <p></p>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
